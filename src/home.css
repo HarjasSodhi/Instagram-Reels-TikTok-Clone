@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+}
+.logOut {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+}
+
+.post-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  background-color: black;
+}
+
+.videoCard {
+  height: 100vh;
+  width: 30rem;
+  margin: auto;
+  color: white;
+  border: 1px solid;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.like {
+  font-size: 40px;
+  color: #d63031;
+  position: absolute;
+  bottom: 20vh;
+  right: 10px;
+}
+
+.comment {
+  font-size: 40px;
+  position: absolute;
+  bottom: 10vh;
+  right: 10px;
+}
+.name {
+  position: absolute;
+  bottom: 20vh;
+  left: 20px;
+}
+.song {
+  position: absolute;
+  left: 20px;
+  bottom: 16vh;
+  display: flex;
+  justify-content: space-around;
+}
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.comment-box {
+  border: 1px solid;
+  height: 45%;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.comment-box-close-btn {
+  position: absolute;
+  top: 0;
+  border: none;
+  right: 0;
+  color: #0984e3;
+  height: 10%;
+}
+
+.all-comments {
+  margin-top: 4.5vh;
+  height: 80%;
+  width: 100%;
+  border: 1px solid black;
+}
+.comment-form {
+  height: 10%;
+}
+.comment-form input {
+  height: 100%;
+  width: 80%;
+  border: none;
+}
+.comment-form button {
+  height: 100%;
+  width: 20%;
+  border: none;
+  color: #0984e3;
+}
+.upload-btn{
+  height: 4rem;
+  width: 5.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 5rem;
+}
+img {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.all-comments > div {
+  display: flex;
+  padding: 8px;
+}
+.all-comments > div > div {
+  margin-left: 20px;
+}
+.inner-comment {
+  margin-top: -1rem;
+}
+.all-comments p{
+  color: black;
+}
+#profile{
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  border-radius: 100%;
+}
